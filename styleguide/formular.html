@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Styleguide til House of Code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <ul class="sidenav">
+    <div class="headerboxstyle">
+      <img src="./img/trendloglogo.png" class="trendlogo" alt="logo">
+    </div>
+    <li><a href="index.html">Knapper</a></li>
+    <li><a href="farver.html">Farver</a></li>
+    <li><a class="active" href="formular.html">Formular</a></li>
+    <li><a href="ikoner.html">Ikoner</a></li>
+    <li><a href="javascript.html">javascript</a></li>
+  </ul>
+
+  <div class="container">
+    <div class="">
+      <h3>Formular</h3>
+      <p>Her ses formularen til vores landingpage</p>
+
+      <div class="kontakt-wrapper">
+        <h3>Kontakt House of Code</h3>
+        <p>Vi glæder os til at høre fra dig!</p>
+        <div id="error_message"></div>
+
+        <form id="myform" onsubmit="return validation()">
+          <div class="input_field">
+            <input type="text" placeholder="Navn" id="name">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Telefonnummer" id="email">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="E-mail" id="nummer">
+          </div>
+          <div class="input_field">
+            <textarea id="besked" placeholder="Besked"></textarea>
+          </div>
+          <div class="kon-btn">
+            <input type="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <xmp>
+      <div class="kontakt-wrapper">
+        <h3>Kontakt House of Code</h3>
+        <p>Vi glæder os til at høre fra dig!</p>
+        <div id="error_message"></div>
+
+        <form id="myform" onsubmit="return validation()">
+          <div class="input_field">
+            <input type="text" placeholder="Navn" id="name">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Telefonnummer" id="email">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="E-mail" id="nummer">
+          </div>
+          <div class="input_field">
+            <textarea id="besked" placeholder="Besked"></textarea>
+          </div>
+          <div class="kon-btn">
+            <input type="submit">
+          </div>
+        </form>
+      </div>
+    </xmp>
+
+
+    <br>
+
+    <h3>Formular 2 </h3>
+    <p>For koncept</p>
+    <div class="textogknapper">
+      <div class="headline">
+        <h1>Dit koncept {</h1>
+      </div>
+      <div class="vigtig-text">
+        <p>Har du allerede et koncept som
+          du gerne vil have vi arbejder
+          videre med? Skriv det her:
+        </p>
+      </div>
+      <div class="bracket">
+        <h1>}</h1>
+      </div>
+      <div class="kontakt-wrapper">
+        <div id="error_message"></div>
+
+        <form id="myform" onsubmit="return validation()">
+          <div class="input_field">
+            <textarea id="besked" placeholder="Skriv dit koncept her"></textarea>
+          </div>
+          <div class="knapper2">
+            <a class="blueknap2">Indsend</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <xmp>
+      <div class="textogknapper">
+        <div class="headline">
+          <h1>Dit koncept {</h1>
+        </div>
+        <div class="vigtig-text">
+          <p>Har du allerede et koncept som
+            du gerne vil have vi arbejder
+            videre med? Skriv det her:
+          </p>
+        </div>
+        <div class="bracket">
+          <h1>}</h1>
+        </div>
+        <div class="kontakt-wrapper">
+          <div id="error_message"></div>
+
+          <form id="myform" onsubmit="return validation()">
+            <div class="input_field">
+              <textarea id="besked" placeholder="Skriv dit koncept her"></textarea>
+            </div>
+            <div class="knapper2">
+              <a class="blueknap2">Indsend</a>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </xmp>
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>
