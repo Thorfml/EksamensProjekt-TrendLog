@@ -1,13 +1,12 @@
-document.getElementById("button-dragndrop").addEventListener("click"); {
-    var dest = parseInt($("#button-dragndrop").css("margin-left").replace("px", "")) + 100;
-    if (dest > 500) {
-        $("#button-dragndrop").animate({
-            marginLeft: "10px"
-          }, 500 );
-    }
-    else {
-      $("#button-dragndrop").animate({
-        marginLeft: dest + "px"
-      }, 500 );
-    }
-});
+document.querySelectorAll('.button-dragndrop').forEach(function (element) {
+    element.addEventListener('click', toggleKeyword);
+  })
+  
+  function toggleKeyword(event) {
+      var element = event.target;
+    var boxUpper = document.getElementById('inner-buttons-grid');
+    var boxPDF = document.getElementById('pdf-text');
+    var newParent = element.parentNode.id === 'inner-buttons-grid' ? boxPDF : boxUpper;
+    element.parentNode.removeChild(element);
+    newParent.appendChild(element);
+  }
