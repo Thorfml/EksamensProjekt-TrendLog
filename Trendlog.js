@@ -1,3 +1,5 @@
+//Knapper til pdf//
+
 document.querySelectorAll('.button-dragndrop').forEach(function (element) {
     element.addEventListener('click', toggleKeyword);
   })
