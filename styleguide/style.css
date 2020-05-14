@@ -234,7 +234,7 @@ ul.sidenav li a:hover:not(.active) {
   font-size: 30px;
 }
 
-#button-dragndrop {
+#button-dragndrop1, #button-dragndrop2, #button-dragndrop3, #button-dragndrop4 {
 background-color: #7CB5EC;
   border: none;
   color: white;
@@ -249,7 +249,7 @@ background-color: #7CB5EC;
   cursor: pointer;
 }
 
-#button-dragndrop:hover {
+#button-dragndrop1:hover, #button-dragndrop2:hover, #button-dragndrop3:hover, #button-dragndrop4:hover {
   opacity: 1;
 }
 
