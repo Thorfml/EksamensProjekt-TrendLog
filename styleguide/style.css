@@ -280,6 +280,7 @@ background-color: #7CB5EC;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+  align-self: stretch;
 }
 
 .button-dragndrop {
@@ -297,6 +298,7 @@ background-color: #7CB5EC;
 
 #pdf-text {
   display: grid;
+  grid-template-rows: auto 1fr 1fr;
   grid-template-areas: 
   'pdf-name pdf-name'
   'pdf-text pdf-text'
