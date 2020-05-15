@@ -201,8 +201,8 @@ ul.sidenav li a:hover:not(.active) {
   font-family: 'Poppins', sans-serif;
 }
 .btn{
-  position: absolute;
-  top: 25px;
+  position: fixed;
+  top: 15px;
   left: 15px;
   height: 70px;
   width: 45px;
