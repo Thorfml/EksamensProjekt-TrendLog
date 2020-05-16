@@ -200,8 +200,8 @@ ul.sidenav li a:hover:not(.active) {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "pdf-name pdf-name pdf-name" 
-  "pdf-text pdf-text pdf-text" 
+  grid-template-areas: "pdf-name pdf-name pdf-name"
+  "pdf-text pdf-text pdf-text"
   "pdf pdf pdf" "pdf pdf pdf";
 }
 
@@ -210,9 +210,9 @@ ul.sidenav li a:hover:not(.active) {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 1px 1px;
-  grid-template-areas: 
-  "pdf-name pdf-name pdf-name" 
-  "pdf-text pdf-text pdf-text" 
+  grid-template-areas:
+  "pdf-name pdf-name pdf-name"
+  "pdf-text pdf-text pdf-text"
   "pdf-text pdf-text pdf-text";
   grid-area: pdf;
 }
@@ -232,13 +232,13 @@ ul.sidenav li a:hover:not(.active) {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: 
-  "menu menu . buttons buttons buttons buttons buttons buttons buttons . ." 
-  "menu menu . buttons buttons buttons buttons buttons buttons buttons . ." 
-  "menu menu . pdf pdf pdf pdf pdf pdf pdf . ." 
-  "menu menu . pdf pdf pdf pdf pdf pdf pdf . ." 
-  "menu menu . pdf pdf pdf pdf pdf pdf pdf . ." 
-  "menu menu . pdf pdf pdf pdf pdf pdf pdf . ." 
+  grid-template-areas:
+  "menu menu . buttons buttons buttons buttons buttons buttons buttons . ."
+  "menu menu . buttons buttons buttons buttons buttons buttons buttons . ."
+  "menu menu . pdf pdf pdf pdf pdf pdf pdf . ."
+  "menu menu . pdf pdf pdf pdf pdf pdf pdf . ."
+  "menu menu . pdf pdf pdf pdf pdf pdf pdf . ."
+  "menu menu . pdf pdf pdf pdf pdf pdf pdf . ."
   "menu menu . pdf pdf pdf pdf pdf pdf pdf . .";
   margin-top: 75px;
   grid-gap: 25px;
@@ -253,8 +253,8 @@ ul.sidenav li a:hover:not(.active) {
   grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
   box-sizing: border-box;
-  grid-template-areas: 
-  ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid ." 
+  grid-template-areas:
+  ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid ."
   ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid .";
   grid-area: buttons;}
   #inner-buttons-grid { grid-area: inner-buttons-grid; }
@@ -289,7 +289,7 @@ background-color: #7CB5EC;
 #inner-buttons-grid {
   display: grid;
   width: fit-content;
-  grid-template-areas: 
+  grid-template-areas:
   'button-dragndrop1 button-dragndrop2'
   'button-dragndrop3 button-dragndrop4';
   grid-gap: 25px;
@@ -297,7 +297,7 @@ background-color: #7CB5EC;
 
 #pdf-text {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
   'pdf-name pdf-name'
   'pdf-text pdf-text'
   'pdf-text pdf-text';
@@ -312,4 +312,3 @@ background-color: #7CB5EC;
   resize: none;
   height: 25px;
 }
-
