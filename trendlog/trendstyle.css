@@ -10,7 +10,10 @@ p {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #D3D3D3;
 }
+
+/* nav mobil og web Start */
 
 .navlogo {
   float: left;
@@ -55,19 +58,6 @@ body {
 
 .navicon {
   float: right;
-}
-
-
-.box {
-  color: black;
-  margin: 100px;
-  background-color: blue;
-}
-
-.box2 {
-  padding: 100px;
-  margin: 100px;
-  height: 1000px;
 }
 
 
@@ -132,7 +122,9 @@ i:hover {
 .topnavQ {
   overflow: hidden;
   background-color: #333;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .topnavQ #myLinks {
@@ -165,20 +157,150 @@ i:hover {
   color: white;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.2fr 0.2fr 0.2fr 3.5fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "Wrench Eye Bell logo Hamburger";
+
+
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
 }
 
-.Wrench { grid-area: Wrench; }
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
 
-.Eye { grid-area: Eye; }
 
-.Bell { grid-area: Bell; }
+.main {
+  text-align: center;
+  background: #222222;
+}
 
-.logo { grid-area: logo; }
+.aside-1 {
+  background: #222222;
+  text-align: left;
+}
 
-.Hamburger { grid-area: Hamburger; }
+.aside-2 {
+  background: #222222;
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media all and (min-width: 300px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 300px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+}
+
+.mobilnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.mobilnav a {
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+.mobilnav a:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navlogomobil {
+  height: 30px;
+  padding-top: 5px;
+}
+
+/* nav mobil og web slut */
+
+.reportcontainer {
+  margin: 80px 20px 20px 20px;
+}
+
+.wrapperR {
+  display: flex;
+  flex-flow: row;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.wrapperR:hover {
+  opacity: 2
+}
+
+.wrapperR > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.mainR {
+  text-align: left;
+  background: white;
+}
+
+.aside-1R {
+  background: white;
+  text-align: center;
+  padding-top: 1vw;
+}
+
+.aside-2R {
+  background: white;
+  text-align: right;
+  padding-top: 1.5vw;
+  font-size: 1.5vw;
+  letter-spacing: 0.2vw;
+  transition: transform .2s;
+}
+
+.aside-2R a:hover {
+transform: scale(1.5);
+}
+
+
+@media all and (min-width: 300px) {
+  .asideR { flex: 1 0 0; }
+}
+
+@media all and (min-width: 300px) {
+  .mainR { order: 1; }
+  .aside-1R { order: 2; }
+  .aside-2R { order: 3; }
+}
+
+h2.pdfname {
+  font-size: 1.3vw;
+}
+
+h3.changes {
+  font-size: 1vw;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+p.pdfid {
+  font-size: 1vw;
+  padding-top: 5px;
+  font-weight: lighter;
+}
