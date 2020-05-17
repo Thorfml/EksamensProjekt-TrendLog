@@ -191,20 +191,8 @@ ul.sidenav li a:hover:not(.active) {
 
 
 /*------------------STYLEGUIDE RELATERET Slut-------------------*/
-<<<<<<< HEAD
 
 
-/*------------------Jonas-----------------------------*/
-
-#buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "pdf-name pdf-name pdf-name"
-  "pdf-text pdf-text pdf-text"
-  "pdf pdf pdf" "pdf pdf pdf";
-=======
 /*------------------Navbar start-------------------*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
@@ -215,10 +203,10 @@ ul.sidenav li a:hover:not(.active) {
   font-family: 'Poppins', sans-serif;
 }
 .btn{
-  position: fixed;
+  position: absolute;
   top: 15px;
-  left: 15px;
-  height: 70px;
+  left: 45px;
+  height: 45px;
   width: 45px;
   text-align: center;
   background: #1b1b1b;
@@ -227,21 +215,21 @@ ul.sidenav li a:hover:not(.active) {
   transition: left 0.4s ease;
 }
 .btn.click{
-  left: 105px;
+  left: 260px;
 }
 .btn span{
   color: white;
-  font-size: 20px;
-  line-height: 15px;
+  font-size: 28px;
+  line-height: 45px;
 }
 .btn.click span:before{
-  content: '\f00d';;
+  content: '\f00d';
 }
 .sidebar{
   position: fixed;
-  width: 150px;
+  width: 250px;
   height: 100%;
-  left: -250px;
+  left: -350px;
   background: #1b1b1b;
   transition: left 0.4s ease;
 }
@@ -250,8 +238,8 @@ ul.sidenav li a:hover:not(.active) {
 }
 .sidebar .text{
   color: white;
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 25px;
+  font-weight: 600;
   line-height: 65px;
   text-align: center;
   background: #1e1e1e;
@@ -264,24 +252,22 @@ nav ul{
   list-style: none;
 }
 nav ul li{
-  line-height: 40px;
+  line-height: 60px;
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 nav ul li:last-child{
   border-bottom: 1px solid rgba(255,255,255,0.05);
->>>>>>> a5892133395414378a717fc3f2eef077b6e0f1cc
 }
 nav ul li a{
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 18px;
   padding-left: 40px;
-  font-weight: 600;
+  font-weight: 500;
   display: block;
-  text-align: left;
   width: 100%;
-  border-left: 2px solid transparent;
+  border-left: 3px solid transparent;
 }
 nav ul li.active a{
   color: #00C52C;
@@ -315,7 +301,7 @@ nav ul ul li{
   border-top: none;
 }
 nav ul ul li a{
-  font-size: 10px;
+  font-size: 17px;
   color: #e6e6e6;
   padding-left: 80px;
 }
@@ -349,7 +335,7 @@ nav ul li a span.rotate{
   text-align: center;
 }
 .content .header{
-  font-size: 20px;
+  font-size: 45px;
   font-weight: 600;
 }
 .content p{
@@ -386,7 +372,6 @@ nav ul li a span.rotate{
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
-<<<<<<< HEAD
   grid-template-areas:
   "menu menu . buttons buttons buttons buttons buttons buttons buttons . ."
   "menu menu . buttons buttons buttons buttons buttons buttons buttons . ."
@@ -395,16 +380,6 @@ nav ul li a span.rotate{
   "menu menu . pdf pdf pdf pdf pdf pdf pdf . ."
   "menu menu . pdf pdf pdf pdf pdf pdf pdf . ."
   "menu menu . pdf pdf pdf pdf pdf pdf pdf . .";
-=======
-  grid-template-areas: 
-  ". . buttons buttons buttons buttons buttons buttons buttons buttons buttons ." 
-  ". . buttons buttons buttons buttons buttons buttons buttons buttons buttons ." 
-  ". . . pdf pdf pdf pdf pdf pdf pdf . ." 
-  ". . . pdf pdf pdf pdf pdf pdf pdf . ." 
-  ". . . pdf pdf pdf pdf pdf pdf pdf . ." 
-  ". . . pdf pdf pdf pdf pdf pdf pdf . ." 
-  ". . . pdf pdf pdf pdf pdf pdf pdf . .";
->>>>>>> a5892133395414378a717fc3f2eef077b6e0f1cc
   margin-top: 75px;
   grid-gap: 25px;
 }
@@ -464,12 +439,9 @@ background-color: #7CB5EC;
 
 #pdf-text {
   display: grid;
-<<<<<<< HEAD
   grid-template-areas:
-=======
   grid-template-rows: auto 1fr 1fr 1fr 1fr;
   grid-template-areas: 
->>>>>>> a5892133395414378a717fc3f2eef077b6e0f1cc
   'pdf-name pdf-name'
   'pdf-text pdf-text'
   'pdf-text pdf-text';
