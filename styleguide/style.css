@@ -205,7 +205,7 @@ ul.sidenav li a:hover:not(.active) {
 .btn{
   position: absolute;
   top: 15px;
-  left: 45px;
+  left: 15px;
   height: 45px;
   width: 45px;
   text-align: center;
@@ -238,9 +238,9 @@ ul.sidenav li a:hover:not(.active) {
 }
 .sidebar .text{
   color: white;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 65px;
+  font-size: 20px;
+  font-weight: 350;
+  line-height: 35px;
   text-align: center;
   background: #1e1e1e;
   letter-spacing: 1px;
