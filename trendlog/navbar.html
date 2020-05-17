@@ -9,68 +9,128 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c44299854e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <nav>
-<div class="">
-  <div class="topnav" id="myTopnav">
-    <div>
+  <nav class="webnav">
+    <div class="topnav" id="myTopnav">
+      <div>
         <img src="trendhvid.png" class="navlogo" alt="">
+      </div>
+      <a class="fa fa-home"></a>
+      <a href="#home">Trendboards</a>
+      <a href="#news">Reports</a>
+      <a href="#contact">Views</a>
+      <a href="#about">Feeds</a>
+      <a href="#about">Settings</a>
+      <a href="#about">Shares</a>
+      <div class="navicon">
+        <a class="fas fa-wrench"></a>
+        <a class="fas fa-eye"></a>
+        <a class="fas fa-bell"></a>
+        <label>Channels</label>
+        <select name="pets" id="pet-select">
+          <option value="">--Please choose an option--</option>
+          <option value="mig">mig</option>
+          <option value="dig">dig</option>
+        </select>
+        <i class="fas fa-user-alt">
+          <p>Thorfml</p>
+        </i>
+      </div>
     </div>
-    <a class="fa fa-home"></a>
-    <a href="#home">Trendboards</a>
-    <a href="#news">Reports</a>
-    <a href="#contact">Views</a>
-    <a href="#about">Feeds</a>
-    <a href="#about">Settings</a>
-    <a href="#about">Shares</a>
+  </nav>
 
-    <div class="navicon">
-      <a class="fas fa-wrench"></a>
-      <a class="fas fa-eye"></a>
-      <a class="fas fa-bell"></a>
+
+<!--
+<nav class="mobilnav">
+    <div class="topnavQ">
+      <div class="naviconQ">
+        <a class="fas fa-wrench"></a>
+        <a class="fas fa-eye"></a>
+        <a class="fas fa-bell"></a>
+      </div>
+        <img src="trendhvid.png" alt="">
+      <div id="myLinksQ">
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <p>Channels</p>
-    <div class="dropdownbox">
+  </nav>
+-->
 
+
+<nav class="mobilnav">
+    <div class="topnavQ">
+      <div class="grid-container">
+        <div class="Wrench">
+          <a class="fas fa-wrench"></a>
+        </div>
+        <div class="Eye">
+          <a class="fas fa-eye"></a>
+        </div>
+        <div class="Bell">
+          <a class="fas fa-bell"></a>
+        </div>
+        <div class="logo">
+          <img src="trendhvid.png" alt="">
+        </div>
+        <div class="Hamburger" id="myLinksQ">
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-</div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="box">
+    <div class="box2">
+      <p>hej med dig jeg heeder kaj </p>
+    </div>
   </div>
-
-
-
-
-
-
-
-
 
   <script>
   function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
+    var x = document.getElementById("myLinksQ");
+    if (x.style.display === "block") {
+      x.style.display = "none";
     } else {
-      x.className = "topnav";
+      x.style.display = "block";
     }
   }
   </script>
-</div>
-</nav>
-
-<div class="box">
-  <div class="box2">
-    <p>hej med dig jeg heeder kaj </p>
-  </div>
-</div>
-
-
 
 
 
