@@ -434,7 +434,7 @@ background-color: #7CB5EC;
 
 #inner-buttons-grid {
   display: grid;
-  width: max-content;
+  width: fit-content;
   grid-template-areas:
   'button-dragndrop1 button-dragndrop2'
   'button-dragndrop3 button-dragndrop4';
