@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	exportEnabled: true,
+	theme: "light1", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Product count"
+	},
+
+    axisY: {
+		title: "Unit Produced",
+		suffix: "k",
+		includeZero: false
+	},
+
+    axisX: {
+		title: "Days in month, ( 3.3.2020 - 4-3.2020 )"  
+	},
+
+	data: [{
+		type: "column", //change type to bar, line, area, pie, etc
+		//indexLabel: "{y}", //Shows y value on all Data Points
+		indexLabelFontColor: "#5A5757",
+      	indexLabelFontSize: 16,
+		indexLabelPlacement: "outside",
+		dataPoints: [
+			{ x: 1, y: 71 },
+			{ x: 2, y: 55 },
+			{ x: 3, y: 50 },
+			{ x: 4, y: 65 },
+			{ x: 5, y: 92, indexLabel: "\u2605 Highest" },
+			{ x: 6, y: 68 },
+			{ x: 7, y: 38 },
+			{ x: 8, y: 71 },
+			{ x: 9, y: 54 },
+			{ x: 10, y: 60 },
+			{ x: 11, y: 36 },
+			{ x: 12, y: 39 },
+            { x: 13, y: 59 },
+            { x: 14, y: 49 },
+            { x: 15, y: 89 },
+            { x: 16, y: 65 },
+            { x: 17, y: 52 },
+            { x: 18, y: 40 },
+            { x: 19, y: 38 },
+            { x: 20, y: 43 },
+            { x: 21, y: 48 },
+            { x: 22, y: 50 },
+            { x: 23, y: 71 },
+            { x: 24, y: 74 },
+            { x: 25, y: 69 },
+            { x: 26, y: 65 },
+            { x: 27, y: 71 },
+            { x: 28, y: 78 },
+            { x: 29, y: 74 },
+            { x: 30, y: 67 },
+			{ x: 31, y: 33, indexLabel: "\u2691 Lowest" }
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
