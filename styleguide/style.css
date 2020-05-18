@@ -209,7 +209,7 @@ ul.sidenav li a:hover:not(.active) {
   height: 45px;
   width: 45px;
   text-align: center;
-  background: #1b1b1b;
+  background: #bbbbbb;
   border-radius: 3px;
   cursor: pointer;
   transition: left 0.4s ease;
@@ -230,7 +230,7 @@ ul.sidenav li a:hover:not(.active) {
   width: 250px;
   height: 100%;
   left: -350px;
-  background: #1b1b1b;
+  background: #bbbbbb;
   transition: left 0.4s ease;
 }
 .sidebar.show{
@@ -246,7 +246,7 @@ ul.sidenav li a:hover:not(.active) {
   letter-spacing: 1px;
 }
 nav ul{
-  background: #1b1b1b;
+  background: #dddddd;
   height: 100%;
   width: 100%;
   list-style: none;
@@ -260,7 +260,7 @@ nav ul li:last-child{
 }
 nav ul li a{
   position: relative;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 18px;
   padding-left: 40px;
@@ -271,11 +271,11 @@ nav ul li a{
 }
 nav ul li.active a{
   color: #00C52C;
-  background: #1e1e1e;
+  background: #bbbbbb;
   border-left-color: #00C52C;
 }
 nav ul li a:hover{
-  background: #1e1e1e;
+  background: #888888;
 }
 nav ul ul{
   position: static;
