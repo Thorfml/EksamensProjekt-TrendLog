@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+<button>
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "dark2", // "light1", "light2", "dark1", "dark2"
+	title: {
+		text: "P1 stop time today"
+	},
+	axisY: {
+		title: "P1 stop time today ( h )",
+		suffix: "",
+		includeZero: false
+	},
+	axisX: {
+		title: "3.3.2020 - 4-3.2020"  
+	},
+	data: [{
+		type: "column",
+		yValueFormatString: "#,##0.0#\"\"",
+		dataPoints: [
+			{ label: "Uncategorised", y: 7.1 },	
+			{ label: "Maintenance", y: 6.70 },	
+			{ label: "Fault", y: 20 },
+			{ label: "Product change", y: 2.50 }
+			
+		]
+	}]
+});
+chart.render();
+
+}
+
+</script>
+</button>
+
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
