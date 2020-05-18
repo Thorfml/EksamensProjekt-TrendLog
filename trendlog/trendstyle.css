@@ -232,7 +232,7 @@ i:hover {
 /* nav mobil og web slut */
 
 .reportcontainer {
-  margin: 80px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
 }
 
 .wrapperR {
@@ -303,4 +303,48 @@ p.pdfid {
   font-size: 1vw;
   padding-top: 5px;
   font-weight: lighter;
+}
+
+/* Reportfiles SLUT */
+
+/* Knapper for reportside START */
+
+.btnreport {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-around;
+  margin: 100px 20px 0px 20px;
+}
+
+
+.countreport {
+  align-items: center;
+}
+
+
+
+
+
+
+.standardknap {
+  position: relative;
+  padding: .3em 1em;
+  font-size: 1.2vw;
+  line-height: 1.7em!important;
+  transition: all .2s;
+  color: white;
+  background-color: #00C52C;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 550;
+  padding: 10px 30px 10px 30px;
+}
+
+.standardknap:hover {
+  background-color: white;
+  color: #6eba01;
+  transition: ease 300ms;
 }
