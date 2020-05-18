@@ -14,7 +14,6 @@ body {
 }
 
 /* nav mobil og web Start */
-
 .navlogo {
   float: left;
   height: 19px;
@@ -54,40 +53,33 @@ body {
   display: none;
 }
 
-
-
 .navicon {
   float: right;
 }
 
-
-
-
-
 label {
-    font-size: 1rem;
-    padding-right: 10px;
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px 15px;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-  }
+  font-size: 1rem;
+  padding-right: 10px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
 
 select {
-    font-size: .9rem;
-    color: black;
-    text-align: center;
-    padding: 5px 5px 5px 5px;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 8px;
-    position: relative;
-
+  font-size: .9rem;
+  color: black;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 8px;
+  position: relative;
 }
 
 i {
@@ -116,8 +108,6 @@ i:hover {
     display: none;
   }
 }
-
-
 
 .topnavQ {
   overflow: hidden;
@@ -157,9 +147,6 @@ i:hover {
   color: white;
 }
 
-
-
-
 .wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -167,11 +154,10 @@ i:hover {
   text-align: center;
 }
 
-.wrapper > * {
+.wrapper>* {
   padding: 10px;
   flex: 1 100%;
 }
-
 
 .main {
   text-align: center;
@@ -190,14 +176,27 @@ i:hover {
 }
 
 @media all and (min-width: 300px) {
-  .aside { flex: 1 0 0; }
+  .aside {
+    flex: 1 0 0;
+  }
 }
 
 @media all and (min-width: 300px) {
-  .main    { flex: 3 0px; }
-  .aside-1 { order: 1; }
-  .main    { order: 2; }
-  .aside-2 { order: 3; }
+  .main {
+    flex: 3 0px;
+  }
+
+  .aside-1 {
+    order: 1;
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .aside-2 {
+    order: 3;
+  }
 }
 
 .mobilnav {
@@ -205,14 +204,12 @@ i:hover {
   background-color: #333;
 }
 
-
 .mobilnav a {
   color: white;
   padding: 14px;
   text-decoration: none;
   font-size: 15px;
 }
-
 
 .mobilnav a:hover {
   background-color: #444444;
@@ -230,7 +227,6 @@ i:hover {
 }
 
 /* nav mobil og web slut */
-
 .reportcontainer {
   margin: 20px 20px 20px 20px;
 }
@@ -249,7 +245,7 @@ i:hover {
   opacity: 2
 }
 
-.wrapperR > * {
+.wrapperR>* {
   padding: 10px;
   flex: 1 100%;
 }
@@ -275,18 +271,27 @@ i:hover {
 }
 
 .aside-2R a:hover {
-transform: scale(1.5);
-}
-
-
-@media all and (min-width: 300px) {
-  .asideR { flex: 1 0 0; }
+  transform: scale(1.5);
 }
 
 @media all and (min-width: 300px) {
-  .mainR { order: 1; }
-  .aside-1R { order: 2; }
-  .aside-2R { order: 3; }
+  .asideR {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 300px) {
+  .mainR {
+    order: 1;
+  }
+
+  .aside-1R {
+    order: 2;
+  }
+
+  .aside-2R {
+    order: 3;
+  }
 }
 
 h2.pdfname {
@@ -306,34 +311,26 @@ p.pdfid {
 }
 
 /* Reportfiles SLUT */
-
 /* Knapper for reportside START */
-
 .btnreport {
   display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
   margin: 100px 20px 0px 20px;
 }
-
 
 .countreport {
   align-items: center;
 }
 
-
-
-
-
-
 .standardknap {
   position: relative;
   padding: .3em 1em;
   font-size: 1.2vw;
-  line-height: 1.7em!important;
+  line-height: 1.7em;
   transition: all .2s;
   color: white;
   background-color: #00C52C;
@@ -347,4 +344,13 @@ p.pdfid {
   background-color: white;
   color: #6eba01;
   transition: ease 300ms;
+}
+
+input {
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 10px 10px 10px;
 }

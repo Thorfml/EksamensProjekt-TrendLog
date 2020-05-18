@@ -11,6 +11,218 @@ body {
   line-height: normal;
   letter-spacing: -0.013em;
   font-family: "Open Sans",Arial,sans-serif;
+  background-color: #D3D3D3;
+}
+.navlogo {
+  float: left;
+  height: 19px;
+  padding: 15px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #222222;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.navicon {
+  float: right;
+}
+
+label {
+  font-size: 1rem;
+  padding-right: 10px;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+select {
+  font-size: .9rem;
+  color: black;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 8px;
+  position: relative;
+}
+
+i {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+i:hover {
+  background-color: #444444;
+  color: white;
+}
+
+@media screen and (min-width: 1165px) {
+  .mobilnav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .webnav {
+    display: none;
+  }
+}
+
+.topnavQ {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnavQ #myLinks {
+  display: none;
+}
+
+.topnavQ a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnavQ a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnavQ a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.activeQ {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper>* {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.main {
+  text-align: center;
+  background: #222222;
+}
+
+.aside-1 {
+  background: #222222;
+  text-align: left;
+}
+
+.aside-2 {
+  background: #222222;
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media all and (min-width: 300px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 300px) {
+  .main {
+    flex: 3 0px;
+  }
+
+  .aside-1 {
+    order: 1;
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .aside-2 {
+    order: 3;
+  }
+}
+
+.mobilnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.mobilnav a {
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.mobilnav a:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navlogomobil {
+  height: 30px;
+  padding-top: 5px;
 }
 
 
@@ -444,7 +656,7 @@ background-color: #7CB5EC;
 #pdf-text {
   display: grid;
   grid-template-rows: auto 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
   'pdf-name pdf-name'
   'pdf-text pdf-text'
   'pdf-text pdf-text';
@@ -462,7 +674,7 @@ background-color: #7CB5EC;
 }
 
 @media only screen and (min-width: 800px) {
-  
+
   #pdf {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -474,7 +686,7 @@ background-color: #7CB5EC;
     "pdf-text pdf-text pdf-text";
     grid-area: pdf;
   }
-  
+
   #pdf-name {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -482,9 +694,9 @@ background-color: #7CB5EC;
     gap: 1px 1px;
     grid-area: pdf-name;
   }
-  
+
   #pdf-text { grid-area: pdf-text; }
-  
+
   #button-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -501,8 +713,8 @@ background-color: #7CB5EC;
     margin-top: 75px;
     grid-gap: 25px;
   }
-  
-  
+
+
   #buttons {
     display: grid;
     background-color: #EDEDED;
@@ -518,13 +730,13 @@ background-color: #7CB5EC;
     #inner-buttons-grid { grid-area: inner-buttons-grid; }
     .btn {grid-area: btn;}
     #pdf {grid-area: pdf;}
-  
+
   #button-grid > div {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
   }
-  
+
   .button-dragndrop {
   background-color: #7CB5EC;
     border: none;
@@ -540,11 +752,11 @@ background-color: #7CB5EC;
     cursor: pointer;
     align-self: stretch;
   }
-  
+
   .button-dragndrop {
     opacity: 1;
   }
-  
+
   #inner-buttons-grid {
     display: grid;
     width: fit-content;
@@ -553,11 +765,11 @@ background-color: #7CB5EC;
     'button-dragndrop3 button-dragndrop4';
     grid-gap: 25px;
   }
-  
+
   #pdf-text {
     display: grid;
     grid-template-rows: auto 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     'pdf-name pdf-name'
     'pdf-text pdf-text'
     'pdf-text pdf-text';
@@ -566,7 +778,7 @@ background-color: #7CB5EC;
     height: 600px;
     border: 3px solid black;
   }
-  
+
   #pdf-name {
     width: 99.8%;
     resize: none;
