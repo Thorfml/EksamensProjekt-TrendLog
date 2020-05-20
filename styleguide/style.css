@@ -483,7 +483,7 @@ nav ul li a{
   border-left: 3px solid transparent;
 }
 nav ul li.active a{
-  color: black;
+  color: #eeeeee;
   background: #bbbbbb;
   border-left-color: #00C52C;
 }
