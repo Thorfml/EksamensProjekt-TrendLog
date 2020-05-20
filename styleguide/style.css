@@ -425,7 +425,7 @@ ul.sidenav li a:hover:not(.active) {
   top: 350px;
   left: 10px;
   height: 70px;
-  width: 45px;
+  width: 3vw;
   text-align: center;
   background: #dddddd;
   border-radius: 3px;
@@ -450,6 +450,7 @@ ul.sidenav li a:hover:not(.active) {
   background: #1b1b1b;
   transition: left 0.4s ease;
   margin-top: -25px;
+  top: 90px;
 }
 .sidebar.show{
   left: 0px;
