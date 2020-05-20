@@ -488,8 +488,13 @@ nav ul li a{
   border-left: 3px solid transparent;
 }
 nav ul li.active a{
+<<<<<<< HEAD
   color: #00C52C;
   background: #1e1e1e;
+=======
+  color: #eeeeee;
+  background: #bbbbbb;
+>>>>>>> 019ffb57a7b3eac2330f9c8c03dadbfed811e222
   border-left-color: #00C52C;
 }
 nav ul li a:hover{
