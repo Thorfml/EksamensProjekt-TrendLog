@@ -410,7 +410,7 @@ ul.sidenav li a:hover:not(.active) {
 
 /*-------------------------------Phillip------------------------*/
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 100px) {
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
