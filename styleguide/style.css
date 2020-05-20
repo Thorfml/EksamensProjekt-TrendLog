@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+
+
 body {
   margin: 0;
   color: #000;
@@ -15,7 +17,7 @@ body {
 }
 .navlogo {
   float: left;
-  height: 19px;
+  height: 50px;
   padding: 15px;
 }
 
@@ -100,6 +102,7 @@ i:hover {
   .mobilnav {
     display: none;
   }
+
 }
 
 @media screen and (max-width: 1165px) {
@@ -405,7 +408,9 @@ ul.sidenav li a:hover:not(.active) {
 /*------------------STYLEGUIDE RELATERET Slut-------------------*/
 
 
-/*------------------Navbar start-------------------*/
+/*-------------------------------Jonas------------------------*/
+
+@media only screen and (min-width: 800px) {
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
@@ -417,12 +422,12 @@ ul.sidenav li a:hover:not(.active) {
 }
 .btn{
   position: absolute;
-  top: 300px;
+  top: 15px;
   left: 15px;
   height: 45px;
   width: 45px;
   text-align: center;
-  background: #dddddd;
+  background: #1b1b1b;
   border-radius: 3px;
   cursor: pointer;
   transition: left 0.4s ease;
@@ -443,7 +448,7 @@ ul.sidenav li a:hover:not(.active) {
   width: 250px;
   height: 100%;
   left: -350px;
-  background: #dddddd;
+  background: #1b1b1b;
   transition: left 0.4s ease;
 }
 .sidebar.show{
@@ -455,11 +460,11 @@ ul.sidenav li a:hover:not(.active) {
   font-weight: 350;
   line-height: 35px;
   text-align: center;
-  background: #dddddd;
+  background: #1e1e1e;
   letter-spacing: 1px;
 }
 nav ul{
-  background: #bbbbbb;
+  background: #1b1b1b;
   height: 100%;
   width: 100%;
   list-style: none;
@@ -483,8 +488,8 @@ nav ul li a{
   border-left: 3px solid transparent;
 }
 nav ul li.active a{
-  color: black;
-  background: #bbbbbb;
+  color: #00C52C;
+  background: #1e1e1e;
   border-left-color: #00C52C;
 }
 nav ul li a:hover{
@@ -519,8 +524,8 @@ nav ul ul li a{
   padding-left: 80px;
 }
 nav ul li.active ul li a{
-  color: black;
-  background: #dddddd;
+  color: #e6e6e6;
+  background: #1b1b1b;
   border-left-color: transparent;
 }
 nav ul ul li a:hover{
@@ -555,7 +560,139 @@ nav ul li a span.rotate{
   font-size: 30px;
   font-weight: 500;
 }
-/*-------------------------------Jonas------------------------*/
+
+#button-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+  ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
+  ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
+  ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
+  ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
+  ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
+  ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
+  ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf .";
+  margin-top: 75px;
+  grid-gap: 25px;
+}
+
+
+#buttons {
+  display: grid;
+  background-color: #EDEDED;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  box-sizing: border-box;
+  grid-template-areas:
+  ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid ."
+  ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid .";
+  grid-area: buttons;}
+  #inner-buttons-grid { grid-area: inner-buttons-grid; }
+  .btn {grid-area: btn;}
+  #pdf {grid-area: pdf;}
+
+#button-grid > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.button-dragndrop {
+background-color: #7CB5EC;
+  border: none;
+  color: white;
+  max-width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  align-self: stretch;
+}
+
+.button-dragndrop {
+  opacity: 1;
+}
+
+#inner-buttons-grid {
+  display: grid;
+  width: fit-content;
+  grid-template-areas:
+  'button-dragndrop1 button-dragndrop2'
+  'button-dragndrop3 button-dragndrop4';
+  grid-gap: 25px;
+}
+
+#pdf-text {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  'pdf-name pdf-name'
+  'pdf-text pdf-text'
+  'pdf-text pdf-text';
+  float: left;
+  width: 100%;
+  height: 600px;
+  border: 3px solid black;
+}
+
+#pdf-name {
+  width: 99.8%;
+  resize: none;
+  height: 25px;
+}
+
+#pdf-text {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  'pdf-name pdf-name'
+  'pdf-text pdf-text'
+  'pdf-text pdf-text';
+  float: left;
+  width: 100%;
+  height: 500px;
+  border: 3px solid black;
+}
+
+#pdf-name {
+  width: 99.8%;
+  resize: none;
+  height: 25px;
+}
+
+
+  #pdf {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+    "pdf-name pdf-name pdf-name"
+    "pdf-text pdf-text pdf-text"
+    "pdf-text pdf-text pdf-text";
+    grid-area: pdf;
+  }
+
+  #pdf-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-area: pdf-name;
+  }
+
+  #pdf-text { grid-area: pdf-text; }
+
+}
+
 @media only screen and (max-width: 800px) {
 
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -839,91 +976,4 @@ background-color: #7CB5EC;
 
   #pdf-text { grid-area: pdf-text; }
 
-  #button-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 1px 1px;
-    grid-template-areas:
-    ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
-    ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
-    ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
-    ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
-    ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
-    ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf ."
-    ". . buttons buttons buttons buttons buttons pdf pdf pdf pdf .";
-    margin-top: 75px;
-    grid-gap: 25px;
-  }
-
-
-  #buttons {
-    display: grid;
-    background-color: #EDEDED;
-    width: 100%;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 1px;
-    box-sizing: border-box;
-    grid-template-areas:
-    ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid ."
-    ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid .";
-    grid-area: buttons;}
-    #inner-buttons-grid { grid-area: inner-buttons-grid; }
-    .btn {grid-area: btn;}
-    #pdf {grid-area: pdf;}
-
-  #button-grid > div {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-
-  .button-dragndrop {
-  background-color: #7CB5EC;
-    border: none;
-    color: white;
-    max-width: 100%;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    align-self: stretch;
-  }
-
-  .button-dragndrop {
-    opacity: 1;
-  }
-
-  #inner-buttons-grid {
-    display: grid;
-    width: fit-content;
-    grid-template-areas:
-    'button-dragndrop1 button-dragndrop2'
-    'button-dragndrop3 button-dragndrop4';
-    grid-gap: 25px;
-  }
-
-  #pdf-text {
-    display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    'pdf-name pdf-name'
-    'pdf-text pdf-text'
-    'pdf-text pdf-text';
-    float: left;
-    width: 100%;
-    height: 600px;
-    border: 3px solid black;
-  }
-
-  #pdf-name {
-    width: 99.8%;
-    resize: none;
-    height: 25px;
-  }
 }
