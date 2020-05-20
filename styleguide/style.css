@@ -422,9 +422,9 @@ ul.sidenav li a:hover:not(.active) {
 }
 .btn{
   position: absolute;
-  top: 320px;
-  left: 15px;
-  height: 45px;
+  top: 350px;
+  left: 10px;
+  height: 70px;
   width: 45px;
   text-align: center;
   background: #dddddd;
@@ -433,23 +433,23 @@ ul.sidenav li a:hover:not(.active) {
   transition: left 0.4s ease;
 }
 .btn.click{
-  left: 260px;
+  left: 200px;
 }
 .btn span{
   color: white;
-  font-size: 28px;
-  line-height: 45px;
+  font-size: 30px;
 }
 .btn.click span:before{
   content: '\f00d';
 }
 .sidebar{
   position: fixed;
-  width: 250px;
+  width: 200px;
   height: 100%;
   left: -350px;
   background: #1b1b1b;
   transition: left 0.4s ease;
+  margin-top: -25px;
 }
 .sidebar.show{
   left: 0px;
@@ -480,7 +480,7 @@ nav ul li a{
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 0.99vw;
   padding-left: 40px;
   font-weight: 500;
   display: block;
