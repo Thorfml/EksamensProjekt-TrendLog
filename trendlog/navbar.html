@@ -8,230 +8,40 @@
   <link rel="stylesheet" type="text/css" href="trendstyle.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c44299854e.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="../../external/jquery/jquery.js"></script>
+<script src="../../ui/effect.js"></script>
+  <script>
+  $( function() {
+  $( "#button" ).on( "click", function() {
+    $( "#effect" ).removeClass( "newClass", 1000, callback );
+  });
+
+  function callback() {
+    setTimeout(function() {
+      $( "#effect" ).addClass( "newClass" );
+    }, 1500 );
+  }
+} );
+</script>
+
+
 </head>
 
 <body>
-  <nav class="webnav">
-    <div class="topnav" id="myTopnav">
-      <div>
-        <img src="trendhvid.png" class="navlogo" alt="">
-      </div>
-      <a class="fa fa-home"></a>
-      <a onclick="myFunction()">Trendboards</a>
-      <a onclick="myFunction()">Reports</a>
-      <a onclick="myFunction()">Views</a>
-      <a onclick="myFunction()">Feeds</a>
-      <a onclick="myFunction()">Settings</a>
-      <a onclick="myFunction()">Shares</a>
-      <div class="navicon">
-        <a class="fas fa-wrench" onclick="myFunction()"></a>
-        <a class="fas fa-eye" onclick="myFunction()"></a>
-        <a class="fas fa-bell" onclick="myFunction()"></a>
-        <label>Channels</label>
-        <select name="pets" id="pet-select">
-          <option value="">--Please choose an option--</option>
-          <option value="mig">mig</option>
-          <option value="dig">dig</option>
-        </select>
-          <i class="fas fa-user-alt" onclick="myFunction()">
-            <p>Thorfml</p>
-          </i>
-      </div>
-    </div>
-    <script>
-      function myFunction() {
-        alert("Hey!\nDette er ikke en del af prototypen. Men derved er 'Report's siden!");
-      }
-    </script>
-  </nav>
-  <nav class="mobilnav">
-    <div class="wrapper">
-      <div class="main">
-        <img src="trendhvid.png" class="navlogomobil" alt="">
-      </div>
-      <aside class="aside aside-1">
-        <a onclick="myFunction()" class="fas fa-wrench"></a>
-        <a class="fas fa-eye" onclick="myFunction()"></a>
-        <a class="fas fa-bell" onclick="myFunction()"></a>
-      </aside>
-      <div class="aside aside-2">
-        <a onclick="myFunction()">News</a>
-        <a onclick="myFunction()">Contact</a>
-      </div>
-    </div>
-  </nav>
 
 
 
-  <div class="btnreport">
-    <div class="nyknap">
-      <a class="standardknap" href="../dragndrop.html"> Create new report </a>
-    </div>
-    <div class="searchknap">
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><a class="fa fa-search"></a></button>
-        </form>
-      </div>
+
+
+  <div class="toggler">
+    <div id="effect" class="newClass ui-corner-all">
+      Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
     </div>
   </div>
 
-
-  <div class="reportcontainer">
-    <div class="wrapperR">
-      <div class="mainR">
-        <h2 class="pdfname">Stop Number Report</h2>
-        <p class="pdfid">Id: 137 &#x2223; Scheduled: 06/15/20</p>
-      </div>
-      <aside class="aside aside-1R">
-        <h3 class="changes">Last changed July 13, 2020 08:23 am By Thor Marcussen</h3>
-      </aside>
-      <div class="aside aside-2R">
-        <a class="fas fa-eye"></a>
-        <a class="fas fa-share-alt-square"></a>
-        <a class="fas fa-qrcode"></a>
-        <a class="fas fa-grip-lines-vertical"></a>
-        <a class="fas fa-clock"></a>
-        <a class="fas fa-edit"></a>
-        <a class="fas fa-copy"></a>
-        <a class="fas fa-trash-alt"></a>
-      </div>
-    </div>
-    <div class="wrapperR">
-      <div class="mainR">
-        <h2 class="pdfname">Stop Number Report</h2>
-        <p class="pdfid">Id: 137 &#x2223; Scheduled: 06/15/20</p>
-      </div>
-      <aside class="aside aside-1R">
-        <h3 class="changes">Last changed July 13, 2020 08:23 am By Thor Marcussen</h3>
-      </aside>
-      <div class="aside aside-2R">
-        <a class="fas fa-eye"></a>
-        <a class="fas fa-share-alt-square"></a>
-        <a class="fas fa-qrcode"></a>
-        <a class="fas fa-grip-lines-vertical"></a>
-        <a class="fas fa-clock"></a>
-        <a class="fas fa-edit"></a>
-        <a class="fas fa-copy"></a>
-        <a class="fas fa-trash-alt"></a>
-      </div>
-    </div>
-    <div class="wrapperR">
-      <div class="mainR">
-        <h2 class="pdfname">Stop Number Report</h2>
-        <p class="pdfid">Id: 137 &#x2223; Scheduled: 06/15/20</p>
-      </div>
-      <aside class="aside aside-1R">
-        <h3 class="changes">Last changed July 13, 2020 08:23 am By Thor Marcussen</h3>
-      </aside>
-      <div class="aside aside-2R">
-        <a class="fas fa-eye"></a>
-        <a class="fas fa-share-alt-square"></a>
-        <a class="fas fa-qrcode"></a>
-        <a class="fas fa-grip-lines-vertical"></a>
-        <a class="fas fa-clock"></a>
-        <a class="fas fa-edit"></a>
-        <a class="fas fa-copy"></a>
-        <a class="fas fa-trash-alt"></a>
-      </div>
-    </div>
-    <div class="wrapperR">
-      <div class="mainR">
-        <h2 class="pdfname">Stop Number Report</h2>
-        <p class="pdfid">Id: 137 &#x2223; Scheduled: 06/15/20</p>
-      </div>
-      <aside class="aside aside-1R">
-        <h3 class="changes">Last changed July 13, 2020 08:23 am By Thor Marcussen</h3>
-      </aside>
-      <div class="aside aside-2R">
-        <a class="fas fa-eye"></a>
-        <a class="fas fa-share-alt-square"></a>
-        <a class="fas fa-qrcode"></a>
-        <a class="fas fa-grip-lines-vertical"></a>
-        <a class="fas fa-clock"></a>
-        <a class="fas fa-edit"></a>
-        <a class="fas fa-copy"></a>
-        <a class="fas fa-trash-alt"></a>
-      </div>
-    </div>
-    <div class="wrapperR">
-      <div class="mainR">
-        <h2 class="pdfname">Stop Number Report</h2>
-        <p class="pdfid">Id: 137 &#x2223; Scheduled: 06/15/20</p>
-      </div>
-      <aside class="aside aside-1R">
-        <h3 class="changes">Last changed July 13, 2020 08:23 am By Thor Marcussen</h3>
-      </aside>
-      <div class="aside aside-2R">
-        <a class="fas fa-eye"></a>
-        <a class="fas fa-share-alt-square"></a>
-        <a class="fas fa-qrcode"></a>
-        <a class="fas fa-grip-lines-vertical"></a>
-        <a class="fas fa-clock"></a>
-        <a class="fas fa-edit"></a>
-        <a class="fas fa-copy"></a>
-        <a class="fas fa-trash-alt"></a>
-      </div>
-    </div>
-    <div class="wrapperR">
-      <div class="mainR">
-        <h2 class="pdfname">Stop Number Report</h2>
-        <p class="pdfid">Id: 137 &#x2223; Scheduled: 06/15/20</p>
-      </div>
-      <aside class="aside aside-1R">
-        <h3 class="changes">Last changed July 13, 2020 08:23 am By Thor Marcussen</h3>
-      </aside>
-      <div class="aside aside-2R">
-        <a class="fas fa-eye"></a>
-        <a class="fas fa-share-alt-square"></a>
-        <a class="fas fa-qrcode"></a>
-        <a class="fas fa-grip-lines-vertical"></a>
-        <a class="fas fa-clock"></a>
-        <a class="fas fa-edit"></a>
-        <a class="fas fa-copy"></a>
-        <a class="fas fa-trash-alt"></a>
-      </div>
-    </div>
-    <div class="wrapperR">
-      <div class="mainR">
-        <h2 class="pdfname">Stop Number Report</h2>
-        <p class="pdfid">Id: 137 &#x2223; Scheduled: 06/15/20</p>
-      </div>
-      <aside class="aside aside-1R">
-        <h3 class="changes">Last changed July 13, 2020 08:23 am By Thor Marcussen</h3>
-      </aside>
-      <div class="aside aside-2R">
-        <a class="fas fa-eye"></a>
-        <a class="fas fa-share-alt-square"></a>
-        <a class="fas fa-qrcode"></a>
-        <a class="fas fa-grip-lines-vertical"></a>
-        <a class="fas fa-clock"></a>
-        <a class="fas fa-edit"></a>
-        <a class="fas fa-copy"></a>
-        <a class="fas fa-trash-alt"></a>
-      </div>
-    </div>
-    <div class="wrapperR">
-      <div class="mainR">
-        <h2 class="pdfname">Stop Number Report</h2>
-        <p class="pdfid">Id: 137 &#x2223; Scheduled: 06/15/20</p>
-      </div>
-      <aside class="aside aside-1R">
-        <h3 class="changes">Last changed July 13, 2020 08:23 am By Thor Marcussen</h3>
-      </aside>
-      <div class="aside aside-2R">
-        <a class="fas fa-eye"></a>
-        <a class="fas fa-share-alt-square"></a>
-        <a class="fas fa-qrcode"></a>
-        <a class="fas fa-grip-lines-vertical"></a>
-        <a class="fas fa-clock"></a>
-        <a class="fas fa-edit"></a>
-        <a class="fas fa-copy"></a>
-        <a class="fas fa-trash-alt"></a>
-      </div>
-    </div>
-  </div>
+  <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
 
 
 
