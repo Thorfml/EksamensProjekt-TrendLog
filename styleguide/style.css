@@ -427,17 +427,17 @@ ul.sidenav li a:hover:not(.active) {
   height: 70px;
   width: 3vw;
   text-align: center;
-  background: #dddddd;
-  border-radius: 3px;
+  background: #DFDFDF;
   cursor: pointer;
   transition: left 0.4s ease;
+  border-radius: 2px;
 }
 .btn.click{
   left: 15vw;
 }
 .btn span{
-  color: white;
-  font-size: 30px;
+  color: #1b1b1b;
+  font-size: 25px;
 }
 .btn.click span:before{
   content: '\f00d';
@@ -451,6 +451,7 @@ ul.sidenav li a:hover:not(.active) {
   transition: left 0.4s ease;
   margin-top: -25px;
   top: 90px;
+  border: 1px solid #EDEDED;
 }
 .sidebar.show{
   left: 0px;
@@ -465,38 +466,58 @@ ul.sidenav li a:hover:not(.active) {
   letter-spacing: 1px;
 }
 nav ul{
-  background: #bbbbbb;
+  background: white;
   height: 100%;
   width: 100%;
   list-style: none;
 }
-nav ul li{
-  line-height: 50px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+
+
+nav ul li {
+  line-height: 55px;
 }
 nav ul li:last-child{
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 nav ul li a{
   position: relative;
-  color: white;
+  color: #333333;
   text-decoration: none;
   font-size: 1vw;
   padding-left: 40px;
   font-weight: 500;
   display: block;
   width: 100%;
-  border-left: 3px solid transparent;
+  border-bottom: 1px solid grey;
 }
 nav ul li.active a{
-  background: #979797;
-  color: white;
+  background: white;
+  color: #00C52C;
   border-left-color: #00C52C;
+  border-left: 5px solid transparent;
 }
 nav ul li a:hover{
+  background: white;
+  color: #00C52C;
+}
+
+nav ul ul li a {
+  font-size: 1vw;
+  color: #e6e6e6;
+  padding-left: 60px;
+}
+
+nav ul li.active ul li a {
+  background: white;
+  color: #00C52C;
+  border-left-color: #00C52C;
+}
+
+nav ul ul li a:hover {
   background: #979797;
   color: white;
 }
+
 nav ul ul{
   position: static;
   display: none;
@@ -520,20 +541,7 @@ nav ul ul li{
   line-height: 42px;
   border-top: none;
 }
-nav ul ul li a{
-  font-size: 1vw;
-  color: #e6e6e6;
-  padding-left: 60px;
-}
-nav ul li.active ul li a{
-  color:white;
-  background: #979797;
-  border-left-color: #00C52C;
-}
-nav ul ul li a:hover{
-  background: #979797;
-  color: white;
-}
+
 nav ul li a span{
   position: absolute;
   top: 50%;
@@ -547,14 +555,10 @@ nav ul li a span.rotate{
 }
 
 nav ul li ul li a:hover {
-  color: white;
-  background: #404040;
+  background: #e5e5e5;
+  color: #00C52C;
 }
 
-nav ul li ul li a:active {
-  color: white;
-  background: #404040;
-}
 
 .content{
   position: absolute;
@@ -573,6 +577,39 @@ nav ul li ul li a:active {
   font-size: 30px;
   font-weight: 500;
 }
+
+.datorap {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 1.4vw;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+  background-color: white;
+  padding: 15px 15px 15px 40px;
+  border-bottom: 1px solid grey;
+}
+
+.mellemrum {
+  background-color: #DFDFDF;
+  position: relative;
+  color: black;
+  width: 100%;
+  border-left: 3px solid transparent;
+  padding: 5px 5px 5px 5px;
+}
+
+.mellemrumslut {
+  background-color: #DFDFDF;
+  position: relative;
+  width: 100%;
+  border-left: 3px solid transparent;
+  padding: 5px 5px 100000px 5px;
+}
+
 /*-------------------------------Jonas------------------------*/
 
 
@@ -625,6 +662,9 @@ nav ul li ul li a:active {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
+  -webkit-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+  -moz-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+  box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
   box-sizing: border-box;
   grid-template-areas:
   ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid ."
@@ -680,12 +720,16 @@ nav ul li ul li a:active {
   width: 100%;
   height: 500px;
   border: 3px solid black;
+  -webkit-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+  -moz-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+  box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
 }
 
 #pdf-name {
-  width: 99.8%;
+  width: 100%;
   resize: none;
   height: 25px;
+  text-align: center;
 }
 
 
@@ -701,21 +745,9 @@ nav ul li ul li a:active {
     grid-area: pdf;
   }
 
-  #pdf-name {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1px 1px;
-    grid-area: pdf-name;
-  }
 
   #pdf-text { grid-area: pdf-text; }
 
-.toggler {
-    width: 500px;
-    height: 200px;
-    position: relative;
-  }
-  #button { padding: .5em 1em; text-decoration: none; }
-  #effect { position: relative;  width: 240px;  padding: 1em;  letter-spacing: 0; font-size: 1.2em; border: 1px solid #000; background: #eee; color: #333; }
-  .newClass { text-indent: 40px; letter-spacing: .4em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.6em; }
+nav ul li a {
+
+}
