@@ -434,7 +434,7 @@ ul.sidenav li a:hover:not(.active) {
   border: 1px solid grey;
 }
 .btn.click{
-  left: 15vw;
+  left: 14.9vw;
 }
 .btn span{
   color: black;
@@ -450,7 +450,7 @@ ul.sidenav li a:hover:not(.active) {
   left: -350px;
   background: #1b1b1b;
   transition: left 0.4s ease;
-  margin-top: -25px;
+  margin-top: -27px;
   top: 90px;
   border: 1px solid grey;
 }
@@ -498,6 +498,7 @@ nav ul li.active a{
 nav ul li a:hover{
   background: white;
   color: #00C52C;
+    border-left: 3px solid #00C52C;
 }
 
 nav ul ul li a {
@@ -607,6 +608,17 @@ nav ul li ul li a:hover {
   width: 100%;
   border-left: 3px solid transparent;
   padding: 5px 5px 100000px 5px;
+}
+
+.border {
+  border-top: 1px solid grey;
+}
+
+
+@media all and (min-width: 1180px) {
+  .sidebar {
+    margin-top: -40px;
+  }
 }
 
 /*-------------------------------Jonas------------------------*/
