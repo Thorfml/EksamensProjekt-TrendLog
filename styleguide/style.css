@@ -611,7 +611,7 @@ nav ul li ul li a:hover {
 }
 
 /*-------------------------------Jonas------------------------*/
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 900px){
 
   #pdf {
     display: grid;
@@ -682,13 +682,13 @@ nav ul li ul li a:hover {
   
   .button-dragndrop {
     background-color: #7CB5EC;
-    border: none;
+    border: 2px solid white;
     color: white;
     max-width: 100%;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
-    transition: 0.3s;
+    transition: 0.5s;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
@@ -696,13 +696,17 @@ nav ul li ul li a:hover {
     padding: 15px;
   }
   
-  .button-dragndrop {
-    opacity: 1;
+  .button-dragndrop:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-color: black;
   }
   
   #inner-buttons-grid {
     display: grid;
     width: fit-content;
+    grid-template-columns: repeat(2);
+    grid-template-columns: repeat(2);
     grid-template-areas:
     'button-dragndrop1 button-dragndrop2'
     'button-dragndrop3 button-dragndrop4';
@@ -754,7 +758,7 @@ nav ul li ul li a:hover {
 
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
 
 
 #pdf {
@@ -826,13 +830,13 @@ nav ul li ul li a:hover {
 
 .button-dragndrop {
   background-color: #7CB5EC;
-  border: none;
+  border: 2px solid white;
   color: white;
   max-width: 100%;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
-  transition: 0.3s;
+  transition: 0.5s;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
@@ -840,13 +844,17 @@ nav ul li ul li a:hover {
   padding: 15px;
 }
 
-.button-dragndrop {
-  opacity: 1;
+.button-dragndrop:hover {
+  background-color: whitesmoke;
+  color: black;
+  border-color: black;
 }
 
 #inner-buttons-grid {
   display: grid;
   width: fit-content;
+  grid-template-columns: repeat(2);
+    grid-template-columns: repeat(2);
   grid-template-areas:
   'button-dragndrop1 button-dragndrop2'
   'button-dragndrop3 button-dragndrop4';
