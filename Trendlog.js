@@ -13,25 +13,6 @@ document.querySelectorAll('.button-dragndrop').forEach(function (element) {
     newParent.appendChild(element);
   }
 
-  const buttons = document.querySelectorAll('button-dragndrop');
-  const buttonSpace = document.querySelectorAll('inner-buttons-grid', 'pdf-text');
-
-  let draggedItem = null;
-  for (let i = 0; i < buttons.length; i++) {
-    const item = buttons [i];
-
-    buttons.addEventListener('dragstart', function(event) {
-       console.log('dragstart', event);
-       draggedItem = this;
-    })
-
-    for (let j = 0; j < buttonSpace.length; j++) {
-      const list = buttonSpace [j];
-      
-    }
-    
-  }
-
   $('.btn').click(function(){
     $(this).toggleClass("click");
     $('.sidebar').toggleClass("show");
