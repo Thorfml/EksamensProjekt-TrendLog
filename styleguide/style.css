@@ -622,6 +622,154 @@ nav ul li ul li a:hover {
 }
 
 /*-------------------------------Jonas------------------------*/
+@media only screen and (min-width: 900px){
+
+  #pdf {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+    "pdf-name pdf-name pdf-name"
+    "pdf-text pdf-text pdf-text"
+    "pdf-text pdf-text pdf-text";
+    grid-area: pdf;
+  }
+  
+  #pdf-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-area: pdf-name;
+  }
+  
+  #pdf-text { grid-area: pdf-text; }
+  
+  #button-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7) 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . . . . pdf pdf pdf pdf ."
+    ". . buttons buttons buttons buttons . pdf pdf pdf pdf ."
+    ". . buttons buttons buttons buttons . pdf pdf pdf pdf ."
+    ". . buttons buttons buttons buttons . pdf pdf pdf pdf ."
+    ". . buttons buttons buttons buttons . pdf pdf pdf pdf ."
+    ". . . . . . . pdf pdf pdf pdf ."
+    ". . . . . . . . . . . .";
+    margin-top: 75px;
+    grid-gap: 25px;
+  }
+  
+  
+  #buttons {
+    display: grid;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 600px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    -webkit-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+    -moz-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+    box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+    box-sizing: border-box;
+    grid-template-areas:
+    ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid ."
+    ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid .";
+    grid-area: buttons;}
+    #inner-buttons-grid { grid-area: inner-buttons-grid; }
+    .btn {grid-area: btn;}
+    #pdf {grid-area: pdf;}
+  
+  #button-grid > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .button-dragndrop {
+    background-color: #7CB5EC;
+    border: 2px solid white;
+    color: white;
+    max-width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.5s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    align-self: stretch;
+    padding: 15px;
+  }
+  
+  .button-dragndrop:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-color: black;
+  }
+  
+  #inner-buttons-grid {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(2);
+    grid-template-columns: repeat(2);
+    grid-template-areas:
+    'button-dragndrop1 button-dragndrop2'
+    'button-dragndrop3 button-dragndrop4';
+    grid-gap: 25px;
+  }
+  
+  #pdf-text {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'pdf-name pdf-name'
+    'pdf-text pdf-text'
+    'pdf-text pdf-text';
+    float: left;
+    width: 100%;
+    height: 600px;
+    border: 3px solid black;
+    -webkit-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+    -moz-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+    box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+  }
+  
+  #pdf-name {
+    width: 100%;
+    resize: none;
+    height: 25px;
+    text-align: center;
+  }
+  
+  
+    #pdf {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 1px 1px;
+      grid-template-areas:
+      "pdf-name pdf-name pdf-name"
+      "pdf-text pdf-text pdf-text"
+      "pdf-text pdf-text pdf-text";
+      grid-area: pdf;
+    }
+  
+  
+    #pdf-text { grid-area: pdf-text; }
+  
+  }
+
+}
+
+
+
+@media only screen and (max-width: 900px){
 
 
 #pdf {
@@ -668,8 +816,8 @@ nav ul li ul li a:hover {
 #buttons {
   display: grid;
   background-color: #EDEDED;
-  width: 100%;
-  height: 200px;
+  width: 110%;
+  height: 300px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
@@ -693,13 +841,13 @@ nav ul li ul li a:hover {
 
 .button-dragndrop {
   background-color: #7CB5EC;
-  border: none;
+  border: 2px solid white;
   color: white;
   max-width: 100%;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
-  transition: 0.3s;
+  transition: 0.5s;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
@@ -707,13 +855,17 @@ nav ul li ul li a:hover {
   padding: 15px;
 }
 
-.button-dragndrop {
-  opacity: 1;
+.button-dragndrop:hover {
+  background-color: whitesmoke;
+  color: black;
+  border-color: black;
 }
 
 #inner-buttons-grid {
   display: grid;
   width: fit-content;
+  grid-template-columns: repeat(2);
+    grid-template-columns: repeat(2);
   grid-template-areas:
   'button-dragndrop1 button-dragndrop2'
   'button-dragndrop3 button-dragndrop4';
@@ -728,7 +880,7 @@ nav ul li ul li a:hover {
   'pdf-text pdf-text'
   'pdf-text pdf-text';
   float: left;
-  width: 100%;
+  width: 110%;
   height: 500px;
   border: 3px solid black;
   -webkit-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
@@ -758,3 +910,12 @@ nav ul li ul li a:hover {
 
 
   #pdf-text { grid-area: pdf-text; }
+<<<<<<< HEAD
+=======
+
+}
+
+nav ul li a {
+
+}
+>>>>>>> d8dd7bff1c1215384e2dd9a9a625cda3ab052774
