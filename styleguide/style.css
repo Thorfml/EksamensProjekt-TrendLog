@@ -421,7 +421,7 @@ ul.sidenav li a:hover:not(.active) {
   font-family: 'Poppins', sans-serif;
 }
 .btn{
-  position: absolute;
+  position: fixed;
   top: 350px;
   left: 10px;
   height: 75px;
@@ -635,7 +635,7 @@ nav ul li ul li a:hover {
     "pdf-text pdf-text pdf-text";
     grid-area: pdf;
   }
-  
+
   #pdf-name {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -643,9 +643,9 @@ nav ul li ul li a:hover {
     gap: 1px 1px;
     grid-area: pdf-name;
   }
-  
+
   #pdf-text { grid-area: pdf-text; }
-  
+
   #button-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -662,9 +662,10 @@ nav ul li ul li a:hover {
     ". . . . . . . . . . . .";
     margin-top: 75px;
     grid-gap: 25px;
+    margin-left: 50px;
   }
-  
-  
+
+
   #buttons {
     display: grid;
     background-color: #EDEDED;
@@ -684,13 +685,13 @@ nav ul li ul li a:hover {
     #inner-buttons-grid { grid-area: inner-buttons-grid; }
     .btn {grid-area: btn;}
     #pdf {grid-area: pdf;}
-  
+
   #button-grid > div {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
   }
-  
+
   .button-dragndrop {
     background-color: #7CB5EC;
     border: 2px solid white;
@@ -706,13 +707,13 @@ nav ul li ul li a:hover {
     align-self: stretch;
     padding: 15px;
   }
-  
+
   .button-dragndrop:hover {
     background-color: whitesmoke;
     color: black;
     border-color: black;
   }
-  
+
   #inner-buttons-grid {
     display: grid;
     width: fit-content;
@@ -723,7 +724,7 @@ nav ul li ul li a:hover {
     'button-dragndrop3 button-dragndrop4';
     grid-gap: 25px;
   }
-  
+
   #pdf-text {
     display: grid;
     grid-template-rows: auto 1fr 1fr 1fr 1fr;
@@ -739,15 +740,15 @@ nav ul li ul li a:hover {
     -moz-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
     box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
   }
-  
+
   #pdf-name {
     width: 100%;
     resize: none;
     height: 25px;
     text-align: center;
   }
-  
-  
+
+
     #pdf {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -759,10 +760,10 @@ nav ul li ul li a:hover {
       "pdf-text pdf-text pdf-text";
       grid-area: pdf;
     }
-  
-  
+
+
     #pdf-text { grid-area: pdf-text; }
-  
+
   }
 
 }
@@ -910,12 +911,3 @@ nav ul li ul li a:hover {
 
 
   #pdf-text { grid-area: pdf-text; }
-<<<<<<< HEAD
-=======
-
-}
-
-nav ul li a {
-
-}
->>>>>>> d8dd7bff1c1215384e2dd9a9a625cda3ab052774
