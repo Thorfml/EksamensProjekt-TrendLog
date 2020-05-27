@@ -5,7 +5,7 @@ document.querySelectorAll('.button-dragndrop').forEach(function (element) {
   })
   
   function toggleKeyword(event) {
-    let element = event.target;
+    let element = event.currentTarget;
     let boxUpper = document.getElementById('inner-buttons-grid');
     let boxPDF = document.getElementById('pdf-text');
     let newParent = element.parentNode.id === 'inner-buttons-grid' ? boxPDF : boxUpper;

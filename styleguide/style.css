@@ -764,19 +764,6 @@ nav ul li ul li a:hover {
       grid-area: pdf;
     }
 
-    .settings-container
-    {grid-area: settings;
-     justify-self: start;
-     align-self: end;
-    }
-
-
-    .settings-btn {
-      position: relative;
-      background-color: #7CB5EC;
-      border: 2px solid black;
-      border-left: none;
-    }
 
     .settings-dropup {
       display: none;
@@ -796,6 +783,7 @@ nav ul li ul li a:hover {
        display: block;
        border-bottom: 2px solid black;
        border-right: 2px solid black;
+       border-left: 2px solid black;
     }
 
     .settings-dropup a:hover {
@@ -807,6 +795,29 @@ nav ul li ul li a:hover {
     .settings-container:hover .settings-dropup {
       display: block;
     }
+
+    .button-dragndrop {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: 
+      'fml-text fml-text'
+      'settings settings';
+    }
+
+    .settings-btn {
+      position: relative;
+      background-color: #7CB5EC;
+      border: 2px solid black;
+      justify-self: end;
+      align-self: end;
+      grid-area: settings;
+    }
+    
+    .button-dragndrop p {
+      grid-area: fml-text;
+    }
+
 
   }
 
