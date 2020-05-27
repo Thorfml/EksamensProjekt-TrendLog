@@ -3,6 +3,7 @@
 
 <head>
      <link rel="stylesheet" type="text/css" href="styleguide/style.css"/>
+     <link rel="stylesheet" href="https://fontawesome.com/icons/cog?style=solid"/>
      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
@@ -148,7 +149,16 @@
                <div class="button-dragndrop" type="button";>Average Produce Pr Hour</div>
             </div>
         </div>
-     <div id="pdf"><p id="pdf-text"><textarea id="pdf-name" placeholder="Titel på pdf..."></textarea></div>
+     <div id="pdf">
+          <div id="pdf-text"><div class="settings-container">
+            <button class="settings-btn"><i class="fas fa-cog"></i></button>
+               <div class="settings-dropup">
+                 <a class="noire" href="#">Noire</a>
+                 <a href="#">Festive</a>
+                 <a href="#">Light</a>
+               </div></div>
+             <textarea id="pdf-name" placeholder="Titel på pdf...">
+             </textarea></div></div>
 
 
 
