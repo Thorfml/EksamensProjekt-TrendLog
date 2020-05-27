@@ -143,24 +143,28 @@
          </nav>
         <div id="buttons">
             <div id="inner-buttons-grid">
-               <div class="button-dragndrop" type="button";>Average Produced</div>
+               <div class="button-dragndrop" type="button";>
+                 <p>Average Produced</p>
+                 <div class="settings-container">
+                   <button class="settings-btn"><i class="fas fa-cog"></i></button>
+                   <div class="settings-dropup">
+                     <a class="noire" href="#">Noire</a>
+                     <a href="#">Festive</a>
+                     <a href="#">Light</a>
+                   </div>
+                 </div>
+               </div>
                <div class="button-dragndrop" type="button";>Average Produced Pr Min</div>
                <div class="button-dragndrop" type="button";>Stop Time</div>
                <div class="button-dragndrop" type="button";>Average Produce Pr Hour</div>
             </div>
         </div>
+
      <div id="pdf">
-          <div id="pdf-text"><div class="settings-container">
-            <button class="settings-btn"><i class="fas fa-cog"></i></button>
-               <div class="settings-dropup">
-                 <a class="noire" href="#">Noire</a>
-                 <a href="#">Festive</a>
-                 <a href="#">Light</a>
-               </div></div>
-             <textarea id="pdf-name" placeholder="Titel på pdf...">
-             </textarea></div></div>
-
-
+       <div id="pdf-text">
+         <textarea id="pdf-name" placeholder="Titel på pdf..."></textarea>
+       </div>
+     </div>
 
 <script src="Trendlog.js"></script>
 
