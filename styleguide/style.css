@@ -764,7 +764,7 @@ nav ul li ul li a:hover {
       grid-area: pdf;
     }
 
-    .settings-container 
+    .settings-container
     {grid-area: settings;
      justify-self: start;
      align-self: end;
@@ -781,7 +781,6 @@ nav ul li ul li a:hover {
     .settings-dropup {
       display: none;
       background-color: #7CB5EC;
-      position: absolute;
       bottom: 74px;
       min-width: 150px;
     }
