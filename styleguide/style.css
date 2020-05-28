@@ -937,12 +937,14 @@ nav ul li ul li a:hover {
 #inner-buttons-grid {
   display: grid;
   width: fit-content;
-  grid-template-columns: repeat(2);
+  grid-template-columns: repeat(3);
     grid-template-columns: repeat(2);
   grid-template-areas:
-  'button-dragndrop1 button-dragndrop2'
-  'button-dragndrop3 button-dragndrop4';
-  grid-gap: 25px;
+  'button-dragndrop button-dragndrop'
+  'button-dragndrop button-dragndrop'
+  'button-dragndrop button-dragndrop';
+  grid-gap: 15px;
+  overflow: auto;
 }
 
 #pdf-text {
@@ -970,3 +972,66 @@ nav ul li ul li a:hover {
 
 
   #pdf-text { grid-area: pdf-text; }
+
+  .settings-container {
+    overflow: hidden;
+  }
+
+  .settings-dropup {
+    position: absolute;
+    display: none;
+    background-color: #7CB5EC;
+    min-width: 55px;
+  }
+
+  .noire {
+    border-top: 2px solid black;
+  }
+
+  .settings-dropup a {
+     color: white;
+     text-decoration: none;
+     display: block;
+     border-bottom: 2px solid black;
+     border-right: 2px solid black;
+     border-left: 2px solid black;
+  }
+
+  .settings-dropup a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+  }
+
+  .settings-container:hover .settings-dropup {
+    display: block;
+  }
+
+  .button-dragndrop {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'fml-text fml-text fml-text'
+    'fml-text fml-text fml-text'
+    'settings settings .';
+  }
+
+  .settings-btn {
+    position: relative;
+    background-color: #7CB5EC;
+    border: 2px solid black;
+    grid-area: settings;
+  }
+
+  .button-dragndrop p {
+    grid-area: fml-text;
+  }
+
+  .button-dragndrop i {
+    font-size: 10px;
+
+  }
+
+
+}
