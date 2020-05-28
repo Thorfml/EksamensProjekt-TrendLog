@@ -3,8 +3,6 @@
   padding: 0;
 }
 
-
-
 body {
   margin: 0;
   color: #000;
@@ -371,8 +369,7 @@ ul.sidenav li a:hover:not(.active) {
   color: white;
   background-color: #00C52C;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 550;
+  text-transform: uppercase
 }
 
 .standardknap:hover {
@@ -426,7 +423,7 @@ ul.sidenav li a:hover:not(.active) {
 
 @media only screen and (min-width: 100px) {
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
