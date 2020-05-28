@@ -417,6 +417,11 @@ ul.sidenav li a:hover:not(.active) {
 }
 
 
+.reportlogo {
+  width: 10px;
+}
+
+
 /*-------------------------------Phillip------------------------*/
 
 @media only screen and (min-width: 100px) {
