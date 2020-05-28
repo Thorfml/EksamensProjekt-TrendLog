@@ -738,10 +738,11 @@ nav ul li ul li a:hover {
     display: grid;
     width: fit-content;
     grid-template-columns: repeat(2);
-    grid-template-rows: repeat(2);
+    grid-template-rows: repeat(3);
     grid-template-areas:
-    'button-dragndrop1 button-dragndrop2'
-    'button-dragndrop3 button-dragndrop4';
+    'settings settings'
+    'settings settings'
+    'settings settings';
     grid-gap: 25px;
     opacity: 0;
   }
@@ -788,7 +789,7 @@ nav ul li ul li a:hover {
       position: absolute;
       display: none;
       background-color: #7CB5EC;
-      margin-top: 65px;
+      margin-top: 60px;
       margin-left: 5px;
       min-width: 75px;
     }
@@ -830,7 +831,7 @@ nav ul li ul li a:hover {
       background-color: #7CB5EC;
       border: 2px solid black;
       grid-area: settings;
-      margin-top: 30px;
+      margin-top: 25px;
     }
 
     .button-dragndrop p {
