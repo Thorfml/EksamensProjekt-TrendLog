@@ -407,6 +407,15 @@ ul.sidenav li a:hover:not(.active) {
 
 /*------------------STYLEGUIDE RELATERET Slut-------------------*/
 
+.pdfviewcontainer {
+  margin: 1vw 25vw 4vw 10vw;
+}
+
+.pdfview {
+  float: right;
+  width: 31vw;
+}
+
 
 /*-------------------------------Phillip------------------------*/
 
@@ -432,6 +441,7 @@ ul.sidenav li a:hover:not(.active) {
   transition: left 0.4s ease;
   border-radius: 2px;
   border: 1px solid grey;
+  margin-top: 10px;
 }
 .btn.click{
   left: 14.9vw;
@@ -439,6 +449,7 @@ ul.sidenav li a:hover:not(.active) {
 .btn span{
   color: black;
   font-size: 25px;
+  margin-top: 24px;
 }
 .btn.click span:before{
   content: '\f00d';
@@ -1030,8 +1041,4 @@ nav ul li ul li a:hover {
 
   .button-dragndrop i {
     font-size: 10px;
-
   }
-
-
-}
