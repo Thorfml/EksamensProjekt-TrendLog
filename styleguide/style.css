@@ -666,6 +666,26 @@ nav ul li ul li a:hover {
     margin-left: 50px;
   }
 
+  #buttons {
+    display: grid;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 600px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    -webkit-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+    -moz-box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+    box-shadow: 6px 7px 7px -1px rgba(112,112,112,1);
+    box-sizing: border-box;
+    grid-template-areas:
+    ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid ."
+    ". inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid inner-buttons-grid .";
+    grid-area: buttons;}
+    #inner-buttons-grid { grid-area: inner-buttons-grid; }
+    #pdf {grid-area: pdf;
+    }
+
 
   #buttons {
     display: grid;
@@ -723,6 +743,7 @@ nav ul li ul li a:hover {
     'button-dragndrop1 button-dragndrop2'
     'button-dragndrop3 button-dragndrop4';
     grid-gap: 25px;
+    opacity: 0;
   }
 
   #pdf-text {
@@ -799,7 +820,7 @@ nav ul li ul li a:hover {
       display: grid;
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
-      grid-template-areas: 
+      grid-template-areas:
       'fml-text fml-text'
       'settings settings';
     }
@@ -811,7 +832,7 @@ nav ul li ul li a:hover {
       grid-area: settings;
       margin-top: 30px;
     }
-    
+
     .button-dragndrop p {
       grid-area: fml-text;
     }
